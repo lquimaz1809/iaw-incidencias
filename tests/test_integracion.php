@@ -12,7 +12,7 @@ try {
         [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]
     );
 
-    echo "1. Conexión PDO correcta\n";
+    echo "1. Conexión PDO correcta\n"
 
     $inicial = (int)$pdo->query("SELECT COUNT(*) FROM incidencias")->fetchColumn();
     echo "2. Registros iniciales: {$inicial}\n";
